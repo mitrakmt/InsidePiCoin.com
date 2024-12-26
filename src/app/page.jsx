@@ -144,9 +144,9 @@ export default async function Home() {
         className="mt-24 sm:mt-32 lg:mt-40"
         client={{ name: 'Phobia' }}
       >
-        <p className="mb-6">Be part of a digital economy that’s inclusive, secure, and innovative. Whether you’re a seasoned crypto enthusiast or a newcomer, the Pi Network offers endless opportunities to connect and grow.</p>
+        <span className="mb-6">Be part of a digital economy that’s inclusive, secure, and innovative. Whether you’re a seasoned crypto enthusiast or a newcomer, the Pi Network offers endless opportunities to connect and grow.</span>
 
-       <p>Get <span className="text-indigo-700 font-bold">FREE Pi</span> and start your journey today by downloading the app at <a className="text-indigo-700 hover:text-indigo-500" href="https://www.minepi.com/mitrakmt" target="_blank">minepi.com/mitrakmt</a> and entering the referral code mitrakmt during registration.</p>
+       <span>Get <span className="text-indigo-700 font-bold">FREE Pi</span> and start your journey today by downloading the app at <a className="text-indigo-700 hover:text-indigo-500" href="https://www.minepi.com/mitrakmt" target="_blank">minepi.com/mitrakmt</a> and entering the referral code mitrakmt during registration.</span>
       </Testimonial>
 
       <Advantages />
