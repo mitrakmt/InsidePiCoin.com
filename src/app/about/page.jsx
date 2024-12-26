@@ -125,7 +125,7 @@ export default async function About() {
             Founded by enthusiasts passionate about the Pi cryptocurrency, Inside Pi Network was created with a mission to educate, inform, and grow alongside the Pi community. We aim to provide the most accurate, engaging, and valuable content to help everyone understand and navigate the world of Pi crypto.
           </p>
           <p>
-            At Inside Pi Network, we're more than just a team; we&apos;re a family of Pi advocates. This family atmosphere fosters an environment where everyone is encouraged to bring their insights and passion for Pi to the forefront. We value inclusivity and strive to create a supportive platform where all Pi enthusiasts can learn, share, and thrive.
+            At Inside Pi Network, we&apos;re more than just a team; we&apos;re a family of Pi advocates. This family atmosphere fosters an environment where everyone is encouraged to bring their insights and passion for Pi to the forefront. We value inclusivity and strive to create a supportive platform where all Pi enthusiasts can learn, share, and thrive.
           </p>
         </div>
       </PageIntro>
