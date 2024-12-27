@@ -1,5 +1,7 @@
-import Link from 'next/link'
+'use client';
 
+import Link from 'next/link'
+import { useRef } from 'react';
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 import { Logo } from '@/components/Logo'
@@ -70,8 +72,40 @@ function ArrowIcon(props) {
 }
 
 function NewsletterForm() {
+  const formRef = useRef(null); // Create a ref for the form
+
+    const onSubmit = async (data) => {
+      console.log('data', data);
+      try {
+        const response = await fetch('https://hook.eu2.make.com/ljmiou8bd33rdpepl8tfnld1n1y1kbla', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(data),
+        });
+  
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        console.log('Success:', data);
+        formRef.current.reset(); // Reset the form here on success
+
+      } catch (error) {
+        console.error('Error:', error);
+      }
+    };
+  
+    const handleFormSubmit = (e) => {
+      e.preventDefault(); // Prevent default form submission behavior
+      const formData = new FormData(e.target); // Get form data
+      const data = Object.fromEntries(formData.entries()); // Convert FormData to object
+      onSubmit(data); // Pass the data to your onSubmit function
+    };
+
+    
   return (
-    <form className="max-w-sm">
+    <form className="max-w-sm" onSubmit={(e) => handleFormSubmit(e)} ref={formRef}>
       <h2 className="font-display text-sm font-semibold tracking-wider text-neutral-950">
         Sign up for our newsletter
       </h2>
@@ -82,8 +116,10 @@ function NewsletterForm() {
       <div className="relative mt-6">
         <input
           type="email"
+          id="footer-email"
           placeholder="Email address"
           autoComplete="email"
+          name="email"
           aria-label="Email address"
           className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-neutral-950 ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
         />

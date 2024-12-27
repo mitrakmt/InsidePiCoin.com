@@ -1,3 +1,6 @@
+'use client';
+
+import { useRef } from 'react';
 import { Container } from '@/components/Container'
 import { FadeIn } from '@/components/FadeIn'
 
@@ -15,6 +18,37 @@ function ArrowIcon(props) {
 }
 
 export function ContactSection() {
+  const formRef = useRef(null); // Create a ref for the form
+
+  const onSubmit = async (data) => {
+    console.log('data', data);
+    try {
+      const response = await fetch('https://hook.eu2.make.com/ljmiou8bd33rdpepl8tfnld1n1y1kbla', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      console.log('Success:', data);
+      formRef.current.reset(); // Reset the form here on success
+
+    } catch (error) {
+      console.error('Error:', error);
+    }
+  };
+
+  const handleFormSubmit = (e) => {
+    e.preventDefault(); // Prevent default form submission behavior
+    const formData = new FormData(e.target); // Get form data
+    const data = Object.fromEntries(formData.entries()); // Convert FormData to object
+    onSubmit(data); // Pass the data to your onSubmit function
+  };
+
   return (
     <Container className="mt-24 sm:mt-32 lg:mt-40">
       <FadeIn className="-mx-6 rounded-4xl bg-neutral-950 px-6 py-20 sm:mx-0 sm:py-32 md:px-12">
@@ -27,12 +61,13 @@ export function ContactSection() {
               Subscribe to get the latest design news, articles, resources and inspiration.
             </h3>
           </div>
-          <form className="max-w-sm">
+          <form className="max-w-sm" onSubmit={(e) => handleFormSubmit(e)} ref={formRef}>
             <div className="relative mt-6">
               <input
                 type="email"
                 placeholder="Email address"
                 autoComplete="email"
+                name="email"
                 aria-label="Email address"
                 className="block w-full rounded-2xl border border-neutral-300 bg-transparent py-4 pl-6 pr-20 text-base/6 text-white ring-4 ring-transparent transition placeholder:text-neutral-500 focus:border-neutral-950 focus:outline-none focus:ring-neutral-950/5"
               />
