@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title><![CDATA[Inside Pi Coin]]></title>
+        <description><![CDATA[Stay updated with our latest articles.]]></description>
+        <link>https://www.insidepicoin.com</link>
+        <generator>RSS for Node</generator>
+        <lastBuildDate>Fri, 27 Dec 2024 14:50:39 GMT</lastBuildDate>
+        <atom:link href="https://www.insidepicoin.com/rss.xml" rel="self" type="application/rss+xml"/>
+        <language><![CDATA[en]]></language>
+        <item>
+            <title><![CDATA[how to mine pi coin]]></title>
+            <description><![CDATA[import imageMitrakos from '@/images/team/mitrakos.jpg'
+
+export const article = {
+  date: '2024-12-25',
+  title:
+    'How to Mine Pi Coin: A Beginner’s Guide to Setting Up the Pi Network App and Mining]]></description>
+            <link>https://www.insidepicoin.com/blog/how-to-mine-pi-coin</link>
+            <guid isPermaLink="false">https://www.insidepicoin.com/blog/how-to-mine-pi-coin</guid>
+            <pubDate>Fri, 27 Dec 2024 14:50:39 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[introduction to pi network]]></title>
+            <description><![CDATA[import imageMitrakos from '@/images/team/mitrakos.jpg'
+
+export const article = {
+  date: '2024-12-25',
+  title: 'Introduction to Pi Network',
+  description:
+    'Learn about the Pi Network, a revoluti]]></description>
+            <link>https://www.insidepicoin.com/blog/introduction-to-pi-network</link>
+            <guid isPermaLink="false">https://www.insidepicoin.com/blog/introduction-to-pi-network</guid>
+            <pubDate>Fri, 27 Dec 2024 14:50:39 GMT</pubDate>
+        </item>
+        <item>
+            <title><![CDATA[the technology behind pi coin]]></title>
+            <description><![CDATA[import imageMitrakos from '@/images/team/mitrakos.jpg'
+
+export const article = {
+  date: '2024-12-26',
+  title:
+    'The Technology Behind Pi Coin: Exploring the Blockchain, Consensus Algorithm, and U]]></description>
+            <link>https://www.insidepicoin.com/blog/the-technology-behind-pi-coin</link>
+            <guid isPermaLink="false">https://www.insidepicoin.com/blog/the-technology-behind-pi-coin</guid>
+            <pubDate>Fri, 27 Dec 2024 14:50:39 GMT</pubDate>
+        </item>
+    </channel>
+</rss>

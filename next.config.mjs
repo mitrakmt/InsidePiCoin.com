@@ -11,6 +11,11 @@ import remarkUnwrapImages from 'remark-unwrap-images'
 import shiki from 'shiki'
 import { unifiedConditional } from 'unified-conditional'
 
+// Import the CommonJS module correctly
+import pkg from './src/lib/generateRSSFeed.mjs'; 
+const generateRSSFeed = pkg; // Destructure to get the generateRSSFeed function
+
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   pageExtensions: ['js', 'jsx', 'ts', 'tsx', 'mdx'],
@@ -78,6 +83,9 @@ export default async function config() {
       ],
     },
   })
+
+  // Call generateRSSFeed during the configuration step
+  generateRSSFeed();
 
   return withMDX(nextConfig)
 }
