@@ -9,20 +9,20 @@ export async function GET() {
   const urls = [...staticPages, ...dynamicPages];
 
   const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  ${urls
-    .map(
-      (url) => `
-    <url>
-      <loc>${siteUrl}${url}</loc>
-      <lastmod>${new Date().toISOString()}</lastmod>
-      <changefreq>daily</changefreq>
-      <priority>${url === "/" ? "1.0" : "0.7"}</priority>
-    </url>
-  `
-    )
-    .join("")}
-</urlset>`;
+    <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+      ${urls
+        .map(
+          (url) => `
+        <url>
+          <loc>${siteUrl}${url}</loc>
+          <lastmod>${new Date().toISOString()}</lastmod>
+          <changefreq>daily</changefreq>
+          <priority>${url === "/" ? "1.0" : "0.7"}</priority>
+        </url>
+      `
+        )
+        .join("")}
+    </urlset>`;
 
   return new NextResponse(sitemap, {
     headers: {
@@ -32,6 +32,10 @@ export async function GET() {
 }
 
 async function getDynamicPages() {
-  // Replace this with your logic to fetch dynamic routes (e.g., from a database or API)
-  return ["/blog/introduction-to-pi-network", "/pi-news/mainnet-launch-date", "/blog/how-to-mine-pi-coin"];
+  return [
+    "/blog/introduction-to-pi-network",
+    "/pi-news/mainnet-launch-date",
+    "/blog/how-to-mine-pi-coin",
+    "/blog/the-technology-behind-pi-coin"
+  ];
 }
