@@ -208,9 +208,9 @@ function RootLayoutInner({ children }) {
               <Container>
                 <div className="grid grid-cols-1 gap-y-10 pb-16 pt-10 sm:grid-cols-2 sm:pt-16">
                   <div className="sm:border-l sm:border-transparent sm:pl-16">
-                    <h2 className="font-display text-base font-semibold text-white">
+                    <p className="font-display text-base font-semibold text-white">
                       Follow us
-                    </h2>
+                    </p>
                     <SocialMedia className="mt-6" invert />
                   </div>
                 </div>
