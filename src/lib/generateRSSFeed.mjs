@@ -29,7 +29,7 @@ export default function generateRSSFeed() {
       const articleMatch = fileContent.match(/export const article = \{([\s\S]*?)\}/);
       
       if (metadataMatch) {
-        const metadataCode = metadataMatch[1];
+        const metadataCode = metadataMatch[0];
         console.log("Metadata:", metadataCode);
         const metadata = eval(`(${metadataCode})`); // Parse metadata object
         
