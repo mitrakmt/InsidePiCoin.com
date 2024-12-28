@@ -3,7 +3,8 @@ import path from "path";
 import Feed from "feed";
 
 export default function generateRSSFeed() {
-  const blogFolder = path.join(__dirname, "blog"); // Adjust path as necessary
+  const blogFolder = path.join(process.cwd(), "blog"); // Adjust path if needed
+
   const feed = new Feed({
     title: "Inside Pi Coin",
     description: "Stay updated with our latest articles.",
@@ -62,7 +63,8 @@ export default function generateRSSFeed() {
     }
   });
 
-  const outputPath = path.join(__dirname, "public", "rss.xml");
+  // Save the RSS feed in the `public` folder
+  const outputPath = path.join(process.cwd(), "public", "rss.xml");
   fs.writeFileSync(outputPath, feed.rss2());
   console.log(`RSS feed generated at ${outputPath}`);
 };
