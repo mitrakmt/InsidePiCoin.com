@@ -30,6 +30,7 @@ export default function generateRSSFeed() {
       
       if (metadataMatch) {
         const metadataCode = metadataMatch[1];
+        console.log("Metadata:", metadataCode);
         const metadata = eval(`(${metadataCode})`); // Parse metadata object
         
         let author = null;
