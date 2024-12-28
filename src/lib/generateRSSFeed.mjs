@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const { Feed } = require("feed");
 
-const generateFeed = () => {
+export default function generateRSSFeed() {
   const blogFolder = path.join(__dirname, "blog"); // Adjust path as necessary
   const feed = new Feed({
     title: "Inside Pi Coin",
@@ -66,5 +66,3 @@ const generateFeed = () => {
   fs.writeFileSync(outputPath, feed.rss2());
   console.log(`RSS feed generated at ${outputPath}`);
 };
-
-generateFeed();
