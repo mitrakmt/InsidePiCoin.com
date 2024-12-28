@@ -1,6 +1,6 @@
-const fs = require("fs");
-const path = require("path");
-const { Feed } = require("feed");
+import fs from "fs";
+import path from "path";
+import Feed from "feed";
 
 export default function generateRSSFeed() {
   const blogFolder = path.join(__dirname, "blog"); // Adjust path as necessary
