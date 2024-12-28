@@ -1,6 +1,6 @@
 import fs from "fs";
 import path from "path";
-import Feed from "feed";
+import { Feed } from "feed";
 
 export default function generateRSSFeed() {
   const blogFolder = path.join(process.cwd(), "blog"); // Adjust path if needed
