@@ -4,7 +4,7 @@
         <description><![CDATA[Stay updated with our latest articles.]]></description>
         <link>https://www.insidepicoin.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 27 Dec 2024 15:08:20 GMT</lastBuildDate>
+        <lastBuildDate>Fri, 27 Dec 2024 15:24:56 GMT</lastBuildDate>
         <atom:link href="https://www.insidepicoin.com/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
@@ -17,7 +17,7 @@ export const article = {
     'How to Mine Pi Coin: A Beginner’s Guide to Setting Up the Pi Network App and Mining]]></description>
             <link>https://www.insidepicoin.com/blog/how-to-mine-pi-coin</link>
             <guid isPermaLink="false">https://www.insidepicoin.com/blog/how-to-mine-pi-coin</guid>
-            <pubDate>Fri, 27 Dec 2024 15:08:20 GMT</pubDate>
+            <pubDate>Fri, 27 Dec 2024 15:24:56 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[introduction to pi network]]></title>
@@ -30,7 +30,7 @@ export const article = {
     'Learn about the Pi Network, a revoluti]]></description>
             <link>https://www.insidepicoin.com/blog/introduction-to-pi-network</link>
             <guid isPermaLink="false">https://www.insidepicoin.com/blog/introduction-to-pi-network</guid>
-            <pubDate>Fri, 27 Dec 2024 15:08:20 GMT</pubDate>
+            <pubDate>Fri, 27 Dec 2024 15:24:56 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[the technology behind pi coin]]></title>
@@ -42,7 +42,7 @@ export const article = {
     'The Technology Behind Pi Coin: Exploring the Blockchain, Consensus Algorithm, and U]]></description>
             <link>https://www.insidepicoin.com/blog/the-technology-behind-pi-coin</link>
             <guid isPermaLink="false">https://www.insidepicoin.com/blog/the-technology-behind-pi-coin</guid>
-            <pubDate>Fri, 27 Dec 2024 15:08:20 GMT</pubDate>
+            <pubDate>Fri, 27 Dec 2024 15:24:56 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[the technology behind pi coin copy]]></title>
@@ -54,7 +54,7 @@ export const article = {
     'The Role of Pi Network in Decentralized Finance (DeFi): Potential Applications and ]]></description>
             <link>https://www.insidepicoin.com/blog/the-technology-behind-pi-coin copy</link>
             <guid isPermaLink="false">https://www.insidepicoin.com/blog/the-technology-behind-pi-coin copy</guid>
-            <pubDate>Fri, 27 Dec 2024 15:08:20 GMT</pubDate>
+            <pubDate>Fri, 27 Dec 2024 15:24:56 GMT</pubDate>
         </item>
     </channel>
 </rss>
