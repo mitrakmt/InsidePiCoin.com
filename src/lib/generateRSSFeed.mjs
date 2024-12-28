@@ -22,8 +22,7 @@ export default function generateRSSFeed() {
     const pageFilePath = path.join(articleDir, "page.mdx");
 
     if (fs.existsSync(pageFilePath)) {
-      const content = fs.readFileSync(pageFilePath, "utf-8");
-
+      const fileContent = fs.readFileSync(pageFilePath, "utf-8")
 
       // Extract metadata from the file content
       const metadataMatch = fileContent.match(/export const metadata = \{([\s\S]*?)\}/);
