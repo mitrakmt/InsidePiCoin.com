@@ -1,4 +1,4 @@
-import articles from '../app/blog/articlesData.mjs';
+import articles from '../data/articlesData.mjs';
 
 export default function generateRSSFeed() {
   const rssItems = articles.map((article) => {
