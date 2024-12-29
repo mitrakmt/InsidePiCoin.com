@@ -27,6 +27,9 @@ function Clients() {
 function Blogs({ blogs }) {
   return (
     <>
+      <Head>
+        <link rel="canonical" href="https://www.insidepicoin.com/about-pi" />
+      </Head>
       <SectionIntro
         title="Explore Our Content"
         className="mt-24 sm:mt-32 lg:mt-40"

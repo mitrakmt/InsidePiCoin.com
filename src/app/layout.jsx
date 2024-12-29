@@ -5,8 +5,8 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - Studio',
-    default: 'Inside Pi Network - Content and news on Pi Network',
+    template: '%s - Inside Pi Network',
+    default: 'Content and news on Pi Network',
   },
 }
 
@@ -30,7 +30,6 @@ export default function Layout({ children }) {
             `,
           }}
         />
-
         <RootLayout>{children}</RootLayout>
       </body>
     </html>

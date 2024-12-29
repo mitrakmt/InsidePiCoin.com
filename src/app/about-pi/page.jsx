@@ -7,7 +7,6 @@ import { List, ListItem } from '@/components/List'
 import { StylizedImage } from '@/components/StylizedImage'
 import imageLaptop from '@/images/laptop.jpg'
 import Head from 'next/head';
-
 export const metadata = {
   title: 'What is Pi Network?',
   description:

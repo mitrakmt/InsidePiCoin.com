@@ -48,7 +48,8 @@ function Navigation() {
               Connect
             </div>
               <Link
-                href="https://x.com/insidepicoin"
+            href="https://x.com/insidepicoin"
+            target="_blank"
               >
                 <Image className="h-6 w-6 fill-current" height="50" width="50" src={ximage} alt="X Logo" />
               </Link>

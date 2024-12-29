@@ -14,6 +14,7 @@ export function SocialMedia({ className, invert = false }) {
     >
       <Link
         href="https://x.com/insidepicoin"
+        target="_blank"
         className={clsx(
           'transition bg-white p-2 rounded-full',
           invert ? 'hover:text-neutral-200' : 'hover:text-neutral-700',
