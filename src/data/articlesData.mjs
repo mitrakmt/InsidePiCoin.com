@@ -60,6 +60,20 @@ const articles = [
             'Learn about the Pi Network, a revolutionary cryptocurrency designed for accessibility, sustainability, and community-driven growth.',  
         },
         href: '/blog/introduction-to-pi-network',
+    },
+    {
+      date: '2024-12-29',
+      title: 'Pi Coin vs. Traditional Cryptocurrencies: Comparing it to Bitcoin, Ethereum, and others.',
+      author: {
+        name: 'Michael Mitrakos',
+        role: 'Co-Founder',
+      },
+      metadata: {
+        title: 'Pi Coin vs. Traditional Cryptocurrencies: Comparing it to Bitcoin, Ethereum, and others.',
+        description:
+          'Discover how Pi Coin compares to Bitcoin and Ethereum with its unique mobile mining, community-driven distribution, and focus on everyday use.',  
+      },
+      href: '/blog/pi-coin-vs-traditional-cryptocurrencies',
       }
   ];
   
