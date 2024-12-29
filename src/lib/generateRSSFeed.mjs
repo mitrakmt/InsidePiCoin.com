@@ -1,3 +1,5 @@
+import fs from 'fs';
+import path from 'path';
 import articles from '../data/articlesData.mjs';
 
 export default function generateRSSFeed() {
@@ -24,5 +26,9 @@ export default function generateRSSFeed() {
     </rss>
   `;
 
-  return rssFeed;
+  // Define output path
+  const outputPath = path.resolve('public/rss.xml');
+
+  // Write the RSS feed to the file system
+  fs.writeFileSync(outputPath, rssFeed.trim(), 'utf8');
 }

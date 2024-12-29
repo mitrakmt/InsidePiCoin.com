@@ -5,7 +5,7 @@ const articles = [
       description: 'A step-by-step guide for beginners to start mining Pi Coin using the Pi Network app and join the cryptocurrency revolution.',
       author: {
         name: 'Michael Mitrakos',
-        role: 'Co-Founder',
+        role: 'Co-Founder of Inside Pi Network',
       },
       metadata: {
         title: 'How to Mine Pi Coin: A Beginner’s Guide to Setting Up the Pi Network App and Mining',
@@ -19,7 +19,7 @@ const articles = [
       description: 'Discover the tech behind Pi Coin: delve into its blockchain, efficient consensus algorithm, and unique features like mobile mining and community-driven growth.',
       author: {
         name: 'Michael Mitrakos',
-        role: 'Co-Founder',
+        role: 'Co-Founder of Inside Pi Network',
       },
       metadata: {
         title: 'The Role of Pi Network in Decentralized Finance (DeFi): Potential Applications and Implications',
@@ -35,7 +35,7 @@ const articles = [
           'Discover the tech behind Pi Coin: delve into its blockchain, efficient consensus algorithm, and unique features like mobile mining and community-driven growth.',
         author: {
           name: 'Michael Mitrakos',
-          role: 'Co-Founder',
+          role: 'Co-Founder of Inside Pi Network',
         },
         metadata: {
           title:
@@ -52,7 +52,7 @@ const articles = [
           'Learn about the Pi Network, a revolutionary cryptocurrency designed for accessibility, sustainability, and community-driven growth.',
         author: {
           name: 'Michael Mitrakos',
-          role: 'Co-Founder',
+          role: 'Co-Founder of Inside Pi Network',
         },
         metadata: {
           title: 'Introduction to Pi Network',
@@ -68,7 +68,7 @@ const articles = [
       'Discover how Pi Coin compares to Bitcoin and Ethereum with its unique mobile mining, community-driven distribution, and focus on everyday use.',
       author: {
         name: 'Michael Mitrakos',
-        role: 'Co-Founder',
+        role: 'Co-Founder of Inside Pi Network',
       },
       metadata: {
         title: 'Pi Coin vs. Traditional Cryptocurrencies: Comparing it to Bitcoin, Ethereum, and others.',
