@@ -1,5 +1,5 @@
 import Image from 'next/image'
-
+import Head from 'next/head';
 import { Border } from '@/components/Border'
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
@@ -116,6 +116,10 @@ export default async function About() {
 
   return (
     <>
+      <Head>
+        <link rel="canonical" href="https://www.insidepicoin.com/about" />
+      </Head>
+
       <PageIntro eyebrow="About us" title="Our strength is collaboration">
         <p>
           At Inside Pi Network, we believe our strength lies in our collaborative approach, which places the Pi community at the heart of everything we do. 

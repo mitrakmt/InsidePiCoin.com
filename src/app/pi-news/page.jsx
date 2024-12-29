@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Head from 'next/head';
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
@@ -21,6 +21,9 @@ export default async function PiNews() {
 
   return (
     <>
+      <Head>
+        <link rel="canonical" href="https://www.insidepicoin.com/pi-news" />
+      </Head>
       <PageIntro eyebrow="News" title="The latest news on Pi Network">
         <p>
           Stay up-to-date with the latest news on Pi Network

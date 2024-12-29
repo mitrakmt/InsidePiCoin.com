@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-
+import Head from 'next/head';
 import { Border } from '@/components/Border'
 import { Button } from '@/components/Button'
 import { ContactSection } from '@/components/ContactSection'
@@ -21,6 +21,9 @@ export default async function Blog() {
 
   return (
     <>
+      <Head>
+        <link rel="canonical" href="https://www.insidepicoin.com/blog" />
+      </Head>
       <PageIntro eyebrow="Blog" title="The latest articles and content on Pi Network">
         <p>
           Stay informed with Inside Pi Network! Discover the latest updates, expert insights, and in-depth analysis on Pi Network, its ecosystem, and the future of decentralized cryptocurrency.

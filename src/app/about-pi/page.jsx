@@ -6,6 +6,7 @@ import { Testimonial } from '@/components/Testimonial'
 import { List, ListItem } from '@/components/List'
 import { StylizedImage } from '@/components/StylizedImage'
 import imageLaptop from '@/images/laptop.jpg'
+import Head from 'next/head';
 
 export const metadata = {
   title: 'What is Pi Network?',
@@ -17,6 +18,10 @@ export default async function Work() {
 
   return (
     <>
+      <Head>
+        <link rel="canonical" href="https://www.insidepicoin.com/about-pi" />
+      </Head>
+
       <PageIntro
         eyebrow="About Pi"
         title="What is Pi Network?"

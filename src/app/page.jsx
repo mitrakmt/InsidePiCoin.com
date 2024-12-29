@@ -1,5 +1,5 @@
 import Link from 'next/link'
-
+import Head from 'next/head';
 import { ContactSection } from '@/components/ContactSection'
 import { Container } from '@/components/Container'
 import { FadeIn, FadeInStagger } from '@/components/FadeIn'
@@ -125,6 +125,9 @@ export default async function Home() {
 
   return (
     <>
+      <Head>
+        <link rel="canonical" href="https://www.insidepicoin.com" />
+      </Head>
       <Container className="mt-24 sm:mt-32 md:mt-56">
         <FadeIn className="max-w-3xl">
           <h1 className="font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-7xl">
