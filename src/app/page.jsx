@@ -120,7 +120,8 @@ function Advantages() {
 export const metadata = {
   title: "Inside Pi Network - Your Source for News, Insights, and Updates",
   description:
-    'Stay informed with Inside Pi Network, your go-to platform for the latest news, updates, and insights about the Pi Network ecosystem. Explore its innovations, use cases, and community-driven developments.',
+    'Stay informed with Inside Pi Network, your go-to platform for the latest news, updates, and insights about the Pi Network ecosystem.',
+  canonical: "https://www.insidepicoin.com",
 }
 
 export default async function Home() {

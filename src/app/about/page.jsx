@@ -148,7 +148,7 @@ export default async function About() {
       <PageLinks
         className="mt-24 sm:mt-32 lg:mt-40"
         title="From the blog"
-        intro="Stay informed with Inside Pi Network, your go-to platform for the latest news, updates, and insights about the Pi Network ecosystem. Explore its innovations, use cases, and community-driven developments."
+        intro="Stay informed with Inside Pi Network, your go-to platform for the latest news, updates, and insights about the Pi Network ecosystem."
         pages={blogArticles}
       />
 
