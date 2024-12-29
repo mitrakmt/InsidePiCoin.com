@@ -1,19 +1,28 @@
 import glob from 'fast-glob'
-import { articles } from '../data/articlesData.mjs';  // Adjust path as necessary
+import articles from '../data/articlesData.mjs';  // Adjust path as necessary
 
-async function loadEntries(directory, metaName) {
-  // Filter articles that match the directory and return the necessary data
-  return articles
-    .filter((article) => article.href.includes(directory)) // Filter based on directory
-    .map((article) => {
-      return {
-        ...article,
-        metadata: article.metadata,
-        href: article.href,
-      };
-    })
-    .filter((entry) => entry && entry.date) // Ensure that only articles with dates are included
-    .sort((a, b) => (b.date || '').localeCompare(a.date || '')); // Sort by date in descending order
+async function loadEntries(directory) {
+  return (
+    await Promise.all(
+      articles.map((article) => {
+        try {
+          // Dynamically generate the href based on the directory and article
+          const href = `/${directory}/${article.title.replace(/\s+/g, '-').toLowerCase()}`;
+
+          // Return the article with all metadata and the generated href
+          return {
+            ...article,
+            href: href, // Add the dynamically generated href here
+          };
+        } catch (error) {
+          console.error(`Error loading article:`, error);
+          return null; // Skip invalid articles
+        }
+      })
+    )
+  )
+    .filter((entry) => entry && entry.href) // Filter out invalid articles
+    .sort((a, b) => (b.date || '').localeCompare(a.date || '')); // Sort by date
 }
 
 

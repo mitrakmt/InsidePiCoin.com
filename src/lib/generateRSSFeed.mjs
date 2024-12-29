@@ -2,7 +2,6 @@ import articles from '../data/articlesData.mjs';
 
 export default function generateRSSFeed() {
   const rssItems = articles.map((article) => {
-    console.log('log of article: ', article)
     return `
       <item>
         <title>${article.title}</title>

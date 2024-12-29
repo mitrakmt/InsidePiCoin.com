@@ -8,6 +8,7 @@ import { loadArticles } from '@/lib/mdx'
 
 export default async function BlogArticleWrapper({ article, children }) {
   let allArticles = await loadArticles()
+  console.log('allArticles 2', allArticles)
   if (!allArticles || !Array.isArray(allArticles)) {
     console.error("No articles found or invalid articles data.");
     return null; // Return early if articles are missing
