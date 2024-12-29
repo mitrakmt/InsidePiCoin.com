@@ -6,9 +6,8 @@ import { PageLinks } from '@/components/PageLinks'
 import { formatDate } from '@/lib/formatDate'
 import { loadArticles } from '@/lib/mdx'
 
-export default async function BlogArticleWrapper({ article, children }) {
+export default async function BlogArticleWrapper({ article = {}, children }) {
   let allArticles = await loadArticles()
-  console.log('allArticles 2', allArticles)
   if (!allArticles || !Array.isArray(allArticles)) {
     console.error("No articles found or invalid articles data.");
     return null; // Return early if articles are missing
@@ -17,7 +16,7 @@ export default async function BlogArticleWrapper({ article, children }) {
   let moreArticles = allArticles
     .filter(({ metadata }) => metadata !== article)
     .slice(0, 2)
-
+  
   return (
     <>
       <Container as="article" className="mt-24 sm:mt-32 lg:mt-40">

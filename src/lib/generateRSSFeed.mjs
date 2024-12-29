@@ -5,7 +5,7 @@ export default function generateRSSFeed() {
     return `
       <item>
         <title>${article.title}</title>
-        <link>https://www.insidepicoin.com/blog/${article.slug}</link>
+        <link>https://www.insidepicoin.com${article.href}</link>
         <description>${article.description}</description>
         <author>${article.author.name}</author>
         <pubDate>${new Date(article.date).toUTCString()}</pubDate>

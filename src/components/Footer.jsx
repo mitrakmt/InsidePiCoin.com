@@ -75,7 +75,6 @@ function NewsletterForm() {
   const formRef = useRef(null); // Create a ref for the form
 
     const onSubmit = async (data) => {
-      console.log('data', data);
       try {
         const response = await fetch('https://hook.eu2.make.com/ljmiou8bd33rdpepl8tfnld1n1y1kbla', {
           method: 'POST',

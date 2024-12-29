@@ -1,28 +1,23 @@
 import glob from 'fast-glob'
-import articles from '../data/articlesData.mjs';  // Adjust path as necessary
+// import articles from '../data/articlesData.mjs';  // Adjust path as necessary
 
-async function loadEntries(directory) {
+async function loadEntries(directory, metaName) {
   return (
     await Promise.all(
-      articles.map((article) => {
-        try {
-          // Dynamically generate the href based on the directory and article
-          const href = `/${directory}/${article.title.replace(/\s+/g, '-').toLowerCase()}`;
-
-          // Return the article with all metadata and the generated href
+      (await glob('**/page.mdx', { cwd: `src/app/${directory}` })).map(
+        async (filename) => {
+          let metadata = (await import(`../app/${directory}/${filename}`))[
+            metaName
+          ]
           return {
-            ...article,
-            href: href, // Add the dynamically generated href here
-          };
-        } catch (error) {
-          console.error(`Error loading article:`, error);
-          return null; // Skip invalid articles
-        }
-      })
+            ...metadata,
+            metadata,
+            href: `/${directory}/${filename.replace(/\/page\.mdx$/, '')}`,
+          }
+        },
+      ),
     )
-  )
-    .filter((entry) => entry && entry.href) // Filter out invalid articles
-    .sort((a, b) => (b.date || '').localeCompare(a.date || '')); // Sort by date
+  ).sort((a, b) => b.date.localeCompare(a.date))
 }
 
 
