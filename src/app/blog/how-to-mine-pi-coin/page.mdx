@@ -1,22 +1,8 @@
-import imageMitrakos from '@/images/team/mitrakos.jpg'
+import articles from '../articlesData'
 
-export const article = {
-  date: '2024-12-25',
-  title:
-    'How to Mine Pi Coin: A Beginner’s Guide to Setting Up the Pi Network App and Mining',
-  description:
-    'A step-by-step guide for beginners to start mining Pi Coin using the Pi Network app and join the cryptocurrency revolution.',
-  author: {
-    name: 'Michael Mitrakos',
-    role: 'Co-Founder',
-    image: { src: imageMitrakos },
-  },
-}
-
-export const metadata = {
-  title: article.title,
-  description: article.description,
-}
+export const metadata = articles.find(
+  (article) => article.slug === '/how-to-mine-pi-coin',
+)
 
 ## What is Pi Coin Mining?
 

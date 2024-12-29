@@ -1,22 +1,9 @@
-import imageMitrakos from '@/images/team/mitrakos.jpg'
+import articles from '../articlesData'
 
-export const article = {
-  date: '2024-12-27',
-  title:
-    'The Role of Pi Network in Decentralized Finance (DeFi): Potential Applications and Implications',
-  description:
-    'Discover the tech behind Pi Coin: delve into its blockchain, efficient consensus algorithm, and unique features like mobile mining and community-driven growth.',
-  author: {
-    name: 'Michael Mitrakos',
-    role: 'Co-Founder',
-    image: { src: imageMitrakos },
-  },
-}
-
-export const metadata = {
-  title: article.title,
-  description: article.description,
-}
+export const metadata = articles.find(
+  (article) =>
+    article.slug === '/the-role-of-pi-network-in-decentralized-finance',
+)
 
 In the evolving landscape of blockchain technology, the Pi Network has emerged as a notable player, particularly in the realm of Decentralized Finance (DeFi). This article explores how Pi Network could integrate into the DeFi ecosystem, its potential applications, and the broader implications for users and the financial sector.
 

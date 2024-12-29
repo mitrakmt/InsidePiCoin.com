@@ -4,57 +4,36 @@
         <description><![CDATA[Stay updated with our latest articles.]]></description>
         <link>https://www.insidepicoin.com</link>
         <generator>RSS for Node</generator>
-        <lastBuildDate>Fri, 27 Dec 2024 15:24:56 GMT</lastBuildDate>
+        <lastBuildDate>Sun, 29 Dec 2024 00:44:22 GMT</lastBuildDate>
         <atom:link href="https://www.insidepicoin.com/rss.xml" rel="self" type="application/rss+xml"/>
         <language><![CDATA[en]]></language>
         <item>
+            <title><![CDATA[The Role role of pi network in decentralized finance]]></title>
+            <description><![CDATA[No description provided.]]></description>
+            <link>https://www.insidepicoin.com/blog/The Role role-of-pi-network-in-decentralized-finance</link>
+            <guid isPermaLink="false">https://www.insidepicoin.com/blog/The Role role-of-pi-network-in-decentralized-finance</guid>
+            <pubDate>Sun, 29 Dec 2024 00:44:22 GMT</pubDate>
+        </item>
+        <item>
             <title><![CDATA[how to mine pi coin]]></title>
-            <description><![CDATA[import imageMitrakos from '@/images/team/mitrakos.jpg'
-
-export const article = {
-  date: '2024-12-25',
-  title:
-    'How to Mine Pi Coin: A Beginner’s Guide to Setting Up the Pi Network App and Mining]]></description>
+            <description><![CDATA[No description provided.]]></description>
             <link>https://www.insidepicoin.com/blog/how-to-mine-pi-coin</link>
             <guid isPermaLink="false">https://www.insidepicoin.com/blog/how-to-mine-pi-coin</guid>
-            <pubDate>Fri, 27 Dec 2024 15:24:56 GMT</pubDate>
+            <pubDate>Sun, 29 Dec 2024 00:44:22 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[introduction to pi network]]></title>
-            <description><![CDATA[import imageMitrakos from '@/images/team/mitrakos.jpg'
-
-export const article = {
-  date: '2024-12-25',
-  title: 'Introduction to Pi Network',
-  description:
-    'Learn about the Pi Network, a revoluti]]></description>
+            <description><![CDATA[No description provided.]]></description>
             <link>https://www.insidepicoin.com/blog/introduction-to-pi-network</link>
             <guid isPermaLink="false">https://www.insidepicoin.com/blog/introduction-to-pi-network</guid>
-            <pubDate>Fri, 27 Dec 2024 15:24:56 GMT</pubDate>
+            <pubDate>Sun, 29 Dec 2024 00:44:22 GMT</pubDate>
         </item>
         <item>
             <title><![CDATA[the technology behind pi coin]]></title>
-            <description><![CDATA[import imageMitrakos from '@/images/team/mitrakos.jpg'
-
-export const article = {
-  date: '2024-12-26',
-  title:
-    'The Technology Behind Pi Coin: Exploring the Blockchain, Consensus Algorithm, and U]]></description>
+            <description><![CDATA[No description provided.]]></description>
             <link>https://www.insidepicoin.com/blog/the-technology-behind-pi-coin</link>
             <guid isPermaLink="false">https://www.insidepicoin.com/blog/the-technology-behind-pi-coin</guid>
-            <pubDate>Fri, 27 Dec 2024 15:24:56 GMT</pubDate>
-        </item>
-        <item>
-            <title><![CDATA[the technology behind pi coin copy]]></title>
-            <description><![CDATA[import imageMitrakos from '@/images/team/mitrakos.jpg'
-
-export const article = {
-  date: '2024-12-27',
-  title:
-    'The Role of Pi Network in Decentralized Finance (DeFi): Potential Applications and ]]></description>
-            <link>https://www.insidepicoin.com/blog/the-technology-behind-pi-coin copy</link>
-            <guid isPermaLink="false">https://www.insidepicoin.com/blog/the-technology-behind-pi-coin copy</guid>
-            <pubDate>Fri, 27 Dec 2024 15:24:56 GMT</pubDate>
+            <pubDate>Sun, 29 Dec 2024 00:44:22 GMT</pubDate>
         </item>
     </channel>
 </rss>
