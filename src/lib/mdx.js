@@ -1,28 +1,19 @@
 import glob from 'fast-glob'
+import { articles } from '../data/articlesData.mjs';  // Adjust path as necessary
 
 async function loadEntries(directory, metaName) {
-  return (
-    await Promise.all(
-      (await glob('**/page.mdx', { cwd: `src/app/${directory}` })).map(
-        async (filename) => {
-          const filePath = `../app/${directory}/${filename}`;
-          try {
-            let metadata = (await import(filePath))[metaName];
-            return {
-              ...metadata,
-              metadata,
-              href: `/${directory}/${filename.replace(/\/page\.mdx$/, '')}`,
-            };
-          } catch (error) {
-            console.error(`Error loading metadata from ${filePath}:`, error);
-            return null; // Skip invalid files
-          }
-        },
-      ),
-    )
-  )
-    .filter((entry) => entry && entry.date) // Filter out entries without valid metadata or date
-    .sort((a, b) => (b.date || '').localeCompare(a.date || '')); // Safeguard against missing dates
+  // Filter articles that match the directory and return the necessary data
+  return articles
+    .filter((article) => article.href.includes(directory)) // Filter based on directory
+    .map((article) => {
+      return {
+        ...article,
+        metadata: article.metadata,
+        href: article.href,
+      };
+    })
+    .filter((entry) => entry && entry.date) // Ensure that only articles with dates are included
+    .sort((a, b) => (b.date || '').localeCompare(a.date || '')); // Sort by date in descending order
 }
 
 

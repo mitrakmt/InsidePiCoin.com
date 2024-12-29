@@ -7,6 +7,10 @@ const articles = [
         name: 'Michael Mitrakos',
         role: 'Co-Founder',
       },
+      metadata: {
+        title: 'How to Mine Pi Coin: A Beginner’s Guide to Setting Up the Pi Network App and Mining',
+        description: 'A step-by-step guide for beginners to start mining Pi Coin using the Pi Network app and join the cryptocurrency revolution.',  
+      },
       slug: '/how-to-mine-pi-coin',
     },
     {
@@ -16,6 +20,10 @@ const articles = [
       author: {
         name: 'Michael Mitrakos',
         role: 'Co-Founder',
+      },
+      metadata: {
+        title: 'The Role of Pi Network in Decentralized Finance (DeFi): Potential Applications and Implications',
+        description: 'Discover the tech behind Pi Coin: delve into its blockchain, efficient consensus algorithm, and unique features like mobile mining and community-driven growth.',  
       },
       slug: '/the-role-of-pi-network-in-decentralized-finance',
     },
@@ -29,6 +37,12 @@ const articles = [
           name: 'Michael Mitrakos',
           role: 'Co-Founder',
         },
+        metadata: {
+          title:
+          'The Technology Behind Pi Coin: Exploring the Blockchain, Consensus Algorithm, and Unique Features',
+          description:
+          'Discover the tech behind Pi Coin: delve into its blockchain, efficient consensus algorithm, and unique features like mobile mining and community-driven growth.',
+        },
         slug: '/the-technology-behind-pi-coin',
     },
     {
@@ -39,6 +53,11 @@ const articles = [
         author: {
           name: 'Michael Mitrakos',
           role: 'Co-Founder',
+        },
+        metadata: {
+          title: 'Introduction to Pi Network',
+          description:
+            'Learn about the Pi Network, a revolutionary cryptocurrency designed for accessibility, sustainability, and community-driven growth.',  
         },
         slug: '/introduction-to-pi-network',
       }
