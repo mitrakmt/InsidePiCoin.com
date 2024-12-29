@@ -17,7 +17,7 @@ const articles = [
         name: 'Michael Mitrakos',
         role: 'Co-Founder',
       },
-      slug: '/pi-network-in-defi',
+      slug: '/the-role-of-pi-network-in-decentralized-finance',
     },
     {
         date: '2024-12-26',
