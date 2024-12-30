@@ -31,11 +31,11 @@ function Blogs({ blogs }) {
         <link rel="canonical" href="https://www.insidepicoin.com/about-pi" />
       </Head>
       <SectionIntro
-        title="Explore Our Content"
+        title="Pi Network Resources"
         className="mt-24 sm:mt-32 lg:mt-40"
       >
         <p>
-          At Inside Pi Network, our mission is to keep you informed and inspired. Explore:
+          At Inside Pi Network, our mission is to keep you informed and inspired. Take a look:
         </p>
       </SectionIntro>
       <Container className="mt-16">

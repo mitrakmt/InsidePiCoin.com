@@ -8,7 +8,7 @@ import { StylizedImage } from '@/components/StylizedImage'
 import imageLaptop from '@/images/laptop.jpg'
 import Head from 'next/head';
 export const metadata = {
-  title: 'What is Pi Network?',
+  title: 'What is Pi Network',
   description:
     'We believe in efficiency and maximizing our resources to provide the best value to our clients.',
 }
@@ -23,10 +23,10 @@ export default async function Work() {
 
       <PageIntro
         eyebrow="About Pi"
-        title="What is Pi Network?"
+        title="What is Pi Network"
       >
         <p>
-        Pi Network is a novel cryptocurrency project aimed at making digital currency accessible to everyone. Unlike traditional cryptocurrencies that require expensive hardware and high energy consumption for mining, Pi Network introduces a mobile-first mining approach where users can mine Pi coins simply by using the Pi Network app on their smartphones. This method democratizes the process of earning cryptocurrency, making it possible for anyone with a mobile device to participate.
+          Pi Network is a novel cryptocurrency project aimed at making digital currency accessible to everyone. Unlike traditional cryptocurrencies that require expensive hardware and high energy consumption for mining, Pi Network introduces a mobile-first mining approach where users can mine Pi coins simply by using the Pi Network app on their smartphones. This method democratizes the process of earning cryptocurrency, making it possible for anyone with a mobile device to participate.
         </p>
       </PageIntro>
 

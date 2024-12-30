@@ -6,28 +6,30 @@ import { PageLinks } from '@/components/PageLinks'
 import { formatDate } from '@/lib/formatDate'
 import { loadNews } from '@/lib/mdx'
 
-export default async function NewsPostWrapper({ post, children }) {
-  let allPosts = await loadNews()
-  let moreNews = allPosts
-    .filter(({ metadata }) => metadata !== post)
+export default async function NewsWrapper({ article, children }) {
+  let allArticles = await loadNews()
+  let moreArticles = allArticles
+    .filter(({ metadata }) => metadata !== article)
     .slice(0, 2)
+  
+  console.log('allArticles, ', allArticles )
 
   return (
     <>
-      <Container as="post" className="mt-24 sm:mt-32 lg:mt-40">
+      <Container as="article" className="mt-24 sm:mt-32 lg:mt-40">
         <FadeIn>
           <header className="mx-auto flex max-w-5xl flex-col text-center">
             <h1 className="mt-6 font-display text-5xl font-medium tracking-tight text-neutral-950 [text-wrap:balance] sm:text-6xl">
-              {post.title}
+              {article.title}
             </h1>
             <time
-              dateTime={post.date}
+              dateTime={article.date}
               className="order-first text-sm text-neutral-950"
             >
-              {formatDate(post.date)}
+              {formatDate(article.date)}
             </time>
             <p className="mt-6 text-sm font-semibold text-neutral-950">
-              by {post.author.name}, {post.author.role}
+              by {article.author.name}, {article.author.role}
             </p>
           </header>
         </FadeIn>
@@ -39,11 +41,11 @@ export default async function NewsPostWrapper({ post, children }) {
         </FadeIn>
       </Container>
 
-      {moreNews.length > 0 && (
+      {moreArticles.length > 0 && (
         <PageLinks
           className="mt-24 sm:mt-32 lg:mt-40"
           title="More posts"
-          pages={moreNews}
+          pages={moreArticles}
         />
       )}
 

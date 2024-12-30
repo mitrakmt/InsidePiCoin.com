@@ -5,7 +5,7 @@ import '@/styles/tailwind.css'
 
 export const metadata = {
   title: {
-    template: '%s - Inside Pi Network',
+    template: '%s | Inside Pi Network',
     default: 'Content and news on Pi Network',
   },
 }
