@@ -6,13 +6,11 @@ import { PageLinks } from '@/components/PageLinks'
 import { formatDate } from '@/lib/formatDate'
 import { loadNews } from '@/lib/mdx'
 
-export default async function NewsWrapper({ article, children }) {
+export default async function NewsArticleWrapper({ article = {}, children }) {
   let allArticles = await loadNews()
   let moreArticles = allArticles
     .filter(({ metadata }) => metadata !== article)
     .slice(0, 2)
-  
-  console.log('allArticles, ', allArticles )
 
   return (
     <>

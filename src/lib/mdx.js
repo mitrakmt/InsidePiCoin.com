@@ -29,7 +29,6 @@ async function loadNewsEntries(metaName) {
     await Promise.all(
       (await glob('**/page.mdx', { cwd: `src/app/pi-news` })).map(
         async (filename) => {
-          console.log('filename', filename)
           let metadata = (await import(`../app/pi-news/${filename}`))[metaName]
           return {
             ...metadata,
