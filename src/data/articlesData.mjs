@@ -4,7 +4,7 @@ const articles = [
       title: 'How to Mine Pi Coin: A Beginner’s Guide to Setting Up the Pi Network App and Mining',
       description: 'A step-by-step guide for beginners to start mining Pi Coin using the Pi Network app and join the cryptocurrency revolution.',
       author: {
-        name: 'Michael Mitrakos',
+        name: 'Inside Pi Coin Team',
         role: 'Co-Founder of Inside Pi Network',
       },
       metadata: {
@@ -18,7 +18,7 @@ const articles = [
       title: 'The Role of Pi Network in Decentralized Finance (DeFi): Potential Applications and Implications',
       description: 'Discover the tech behind Pi Coin: delve into its blockchain, efficient consensus algorithm, and unique features like mobile mining and community-driven growth.',
       author: {
-        name: 'Michael Mitrakos',
+        name: 'Inside Pi Coin Team',
         role: 'Co-Founder of Inside Pi Network',
       },
       metadata: {
@@ -34,7 +34,7 @@ const articles = [
         description:
           'Discover the tech behind Pi Coin: delve into its blockchain, efficient consensus algorithm, and unique features like mobile mining and community-driven growth.',
         author: {
-          name: 'Michael Mitrakos',
+          name: 'Inside Pi Coin Team',
           role: 'Co-Founder of Inside Pi Network',
         },
         metadata: {
@@ -51,7 +51,7 @@ const articles = [
         description:
           'Learn about the Pi Network, a revolutionary cryptocurrency designed for accessibility, sustainability, and community-driven growth.',
         author: {
-          name: 'Michael Mitrakos',
+          name: 'Inside Pi Coin Team',
           role: 'Co-Founder of Inside Pi Network',
         },
         metadata: {
@@ -67,7 +67,7 @@ const articles = [
       description:
       'Discover how Pi Coin compares to Bitcoin and Ethereum with its unique mobile mining, community-driven distribution, and focus on everyday use.',
       author: {
-        name: 'Michael Mitrakos',
+        name: 'Inside Pi Coin Team',
         role: 'Co-Founder of Inside Pi Network',
       },
       metadata: {

@@ -48,7 +48,7 @@ const team = [
     title: 'Leadership',
     people: [
       {
-        name: 'Michael mitrakos',
+        name: 'Inside Pi Coin Team',
         role: 'Co-Founder',
         image: { src: imageMitrakos },
       }

@@ -9,7 +9,7 @@ export default function generateRSSFeed() {
         <title>${article.title}</title>
         <link>https://www.insidepicoin.com${article.href}</link>
         <description>${article.description}</description>
-        <author>Michael Mitrakos</author>
+        <author>Inside Pi Coin Team</author>
         <pubDate>${new Date(article.date).toUTCString()}</pubDate>
       </item>
     `;
